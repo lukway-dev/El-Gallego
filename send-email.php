@@ -19,7 +19,7 @@ $to = 'lukymati15@gmail.com';
 
 mail($to, $affair, utf8_decode($mensaje), $header);
 
-header("Location:contact.html");
+header("Location:index.html");
 
 /*
 $nombre = $_POST['nombre'];
