@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image: url("/public/images/background/black.png");
+  background-size: 50%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+h2, h3 {
+  margin-bottom: 0;
+  color: $color-brown-dark;
+  font-family: $font-lato;
+}
+
+h2{
+  text-align: center;
+  font-size: 30px;
+}
+
+p{
+  font-family: $font-roboto-regular;
+}

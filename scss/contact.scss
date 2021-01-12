@@ -1,0 +1,103 @@
+@import "resources/data";
+@import "resources/global";
+@import "resources/animation";
+@import "components/nav";
+
+body{
+  padding-top: 70px;
+  background-color: $color-brown-dark;
+  background-image: linear-gradient($color-red-dark, $color-brown-dark);
+}
+
+.contact{
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36px 1fr;
+  grid-template-areas:"title title"
+                      "form info";
+  &_title{
+    grid-area: title;
+    margin: 0;
+    color: $color-white;
+    span{
+      color: $color-yellow;
+    }
+  }
+  &_info_container{
+    grid-area: info;
+  }
+}
+
+.form{
+  grid-area: form;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &_caption{
+    width: 100%;
+    margin-top: 10px;
+    color: $color-white;
+    font-size: 20px;
+  }
+  &_input, &_textarea{
+    width: calc(100% - 15px);
+    margin: 10px 0 10px 15px;
+    border: none;
+    border-bottom: 3px solid $color-gray;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    background: none;
+    color: $color-white;
+    font-family: $font-roboto-bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    resize: none;
+    transition: border-color .3s, box-shadow .3s;
+    &::placeholder{
+      color: $color-white;
+      opacity: .6;
+      transition: color .3s, opacity .3s;
+    }
+    &:hover, &:focus{
+      border-color: $color-yellow;
+      &::placeholder{
+        color: $color-white;
+        opacity: .8;
+      }
+    }
+    &:focus{
+      box-shadow: 0 0 10px $color-white;
+    }
+  }
+  &_textarea{
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  &_submit{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: 2px solid $color-black;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px $color-white-shadow;
+    background-color: $color-yellow;
+    background-image: linear-gradient($color-yellow, $color-yellow-dark);
+    color: $color-black;
+    font-family: $font-roboto-bold;
+    font-size: 16px;
+    outline: none;
+    transition: border-color .3s, background-color .3s, background-image .3s, color .2s;
+    &:hover, &:active{
+      border-color: $color-white;
+      background-color: $color-red;
+      background-image: linear-gradient($color-red, $color-red-dark);
+      color: $color-white;
+    }
+  }
+}

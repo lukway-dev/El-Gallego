@@ -1,0 +1,16 @@
+.works{
+  width: 100%;
+  height: 100vh;
+  background-color: $color-red-dark;
+  background-image: linear-gradient($color-red-dark, $color-brown-dark);
+  display: flex;
+  &_img_container, &_info_container{
+    width: 50%;
+  }
+  &_title{
+    color: $color-white;
+  }
+  &_description{
+    color: $color-gray;
+  }
+}

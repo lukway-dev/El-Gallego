@@ -1,0 +1,112 @@
+@keyframes appear {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+@keyframes up {
+  0%{
+    opacity: 0;
+    transform: translateY(150%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left {
+  0%{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  0%{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes phone {
+  10%{
+    opacity: 0;
+    transform: translateY(100%) rotate(90deg);
+  }
+  16%{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  23%{
+    opacity: 1;
+    transform: translateY(0) rotate(-30deg);
+  }
+  30%{
+    opacity: 1;
+    transform: translateY(0) rotate(30deg);
+  }
+  36%{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  43%{
+    opacity: 1;
+    transform: translateY(-5%) rotate(0deg) scale(1.1);
+  }
+  50%{
+    opacity: 0;
+    transform: translateY(50%) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes email {
+  60%{
+    opacity: 0;
+    transform: translateY(100%) rotate(90deg);
+  }
+  66%{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  73%{
+    opacity: 1;
+    transform: translateY(0) rotate(-20deg);
+  }
+  80%{
+    opacity: 1;
+    transform: translateY(0) rotate(20deg);
+  }
+  86%{
+    opacity: 1;
+    transform: translateY(0) rotate(0deg);
+  }
+  93%{
+    opacity: 1;
+    transform: translateY(-20%) rotate(0deg) scale(1.2);
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(50%) rotate(0deg) scale(1);
+  }
+}

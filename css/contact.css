@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Monotype-Corsiva";
+  src: url("/public/fonts/Monotype-Corsiva.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Lato";
+  src: url("/public/fonts/Lato-Black.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Bolt";
+  src: url("/public/fonts/Roboto-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/public/fonts/Roboto-Regular.ttf") format("truetype"); }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background-image: url("/public/images/background/black.png");
+  background-size: 50%;
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
+
+h2, h3 {
+  margin-bottom: 0;
+  color: #4b3939;
+  font-family: "Lato"; }
+
+h2 {
+  text-align: center;
+  font-size: 30px; }
+
+p {
+  font-family: "Roboto-Regular"; }
+
+@keyframes appear {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes disappear {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(150%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes phone {
+  10% {
+    opacity: 0;
+    transform: translateY(100%) rotate(90deg); }
+  16% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); }
+  23% {
+    opacity: 1;
+    transform: translateY(0) rotate(-30deg); }
+  30% {
+    opacity: 1;
+    transform: translateY(0) rotate(30deg); }
+  36% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); }
+  43% {
+    opacity: 1;
+    transform: translateY(-5%) rotate(0deg) scale(1.1); }
+  50% {
+    opacity: 0;
+    transform: translateY(50%) rotate(0deg) scale(1); } }
+
+@keyframes email {
+  60% {
+    opacity: 0;
+    transform: translateY(100%) rotate(90deg); }
+  66% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); }
+  73% {
+    opacity: 1;
+    transform: translateY(0) rotate(-20deg); }
+  80% {
+    opacity: 1;
+    transform: translateY(0) rotate(20deg); }
+  86% {
+    opacity: 1;
+    transform: translateY(0) rotate(0deg); }
+  93% {
+    opacity: 1;
+    transform: translateY(-20%) rotate(0deg) scale(1.2); }
+  100% {
+    opacity: 0;
+    transform: translateY(50%) rotate(0deg) scale(1); } }
+
+.nav {
+  width: 100%;
+  height: 70px;
+  padding: 0 0 0 20px;
+  box-shadow: 0 10px 30px #f5eded4d;
+  background-color: #7e6c6c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999; }
+  .nav_logo {
+    height: 66px;
+    width: 140px; }
+  .nav_buttons_container {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .nav_buttons {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto-Bolt";
+    color: #F5EDED;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color .3s; }
+    .nav_buttons i {
+      margin-bottom: 5px;
+      font-size: 22px;
+      transition: color .3s; }
+    .nav_buttons:hover {
+      background-color: #4b3939; }
+      .nav_buttons:hover i {
+        color: #DF4F4F; }
+    .nav_buttons_galery {
+      background-color: #FEDA77;
+      color: #555555;
+      transition: color .3s; }
+      .nav_buttons_galery:hover {
+        background-color: #cbae5f;
+        color: #F5EDED; }
+        .nav_buttons_galery:hover i {
+          color: #D72323; }
+    .nav_buttons_contact {
+      background-color: #D72323; }
+      .nav_buttons_contact span {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative; }
+        .nav_buttons_contact span i:first-child {
+          opacity: 0;
+          animation: phone 10s 1s infinite; }
+        .nav_buttons_contact span i:last-child {
+          position: absolute;
+          top: calc(50% - 11px);
+          left: calc(50% - 11px);
+          opacity: 0;
+          animation: email 10s 1s infinite; }
+      .nav_buttons_contact:hover {
+        background-color: #AC1C1C;
+        color: #F5EDED; }
+        .nav_buttons_contact:hover i {
+          color: #FEDA77; }
+
+.current_section {
+  padding-top: 5px;
+  border-bottom: 5px solid;
+  border-color: #DF4F4F; }
+
+body {
+  padding-top: 70px;
+  background-color: #4b3939;
+  background-image: linear-gradient(#AC1C1C, #4b3939); }
+
+.contact {
+  width: 100%;
+  height: 100%;
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 36px 1fr;
+  grid-template-areas: "title title" "form info"; }
+  .contact_title {
+    grid-area: title;
+    margin: 0;
+    color: #F5EDED; }
+    .contact_title span {
+      color: #FEDA77; }
+  .contact_info_container {
+    grid-area: info; }
+
+.form {
+  grid-area: form;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .form_caption {
+    width: 100%;
+    margin-top: 10px;
+    color: #F5EDED;
+    font-size: 20px; }
+  .form_input, .form_textarea {
+    width: calc(100% - 15px);
+    margin: 10px 0 10px 15px;
+    border: none;
+    border-bottom: 3px solid #C4BEBE;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+    background: none;
+    color: #F5EDED;
+    font-family: "Roboto-Bolt";
+    font-size: 14px;
+    letter-spacing: 1px;
+    outline: none;
+    resize: none;
+    transition: border-color .3s, box-shadow .3s; }
+    .form_input::placeholder, .form_textarea::placeholder {
+      color: #F5EDED;
+      opacity: .6;
+      transition: color .3s, opacity .3s; }
+    .form_input:hover, .form_input:focus, .form_textarea:hover, .form_textarea:focus {
+      border-color: #FEDA77; }
+      .form_input:hover::placeholder, .form_input:focus::placeholder, .form_textarea:hover::placeholder, .form_textarea:focus::placeholder {
+        color: #F5EDED;
+        opacity: .8; }
+    .form_input:focus, .form_textarea:focus {
+      box-shadow: 0 0 10px #F5EDED; }
+  .form_textarea {
+    height: 110px;
+    overflow-x: hidden;
+    overflow-y: auto; }
+  .form_submit {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px #f5eded4d;
+    background-color: #FEDA77;
+    background-image: linear-gradient(#FEDA77, #cbae5f);
+    color: #000000;
+    font-family: "Roboto-Bolt";
+    font-size: 16px;
+    outline: none;
+    transition: border-color .3s, background-color .3s, background-image .3s, color .2s; }
+    .form_submit:hover, .form_submit:active {
+      border-color: #F5EDED;
+      background-color: #D72323;
+      background-image: linear-gradient(#D72323, #AC1C1C);
+      color: #F5EDED; }

@@ -1,0 +1,51 @@
+@font-face{
+  font-family: "Monotype-Corsiva";
+  src: url("/public/fonts/Monotype-Corsiva.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("/public/fonts/Lato-Black.ttf") format("truetype");
+
+}
+@font-face{
+  font-family: "Roboto-Bolt";
+  src: url("/public/fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face{
+  font-family: "Roboto-Regular";
+  src: url("/public/fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+$font-corsiva: "Monotype-Corsiva";
+$font-lato: "Lato";
+$font-roboto-bold: "Roboto-Bolt";
+$font-roboto-regular: "Roboto-Regular";
+
+$color-brown: #5E4747;
+$color-brown-dark: #4b3939;
+$color-brown-light: #7e6c6c;
+$color-red: #D72323;
+$color-red-dark: #AC1C1C;
+$color-red-light: #DF4F4F;
+$color-yellow: #FEDA77;
+$color-yellow-dark: #cbae5f;
+$color-white: #F5EDED;
+$color-white-light: #F7F1F1;
+$color-white-shadow: #f5eded4d;
+$color-gray: #C4BEBE;
+$color-gray-dark: #555555;
+$color-black: #000000;
+$color-black-shadow: #00000073;
+
+$color-email: #FF4A4A;
+$color-email-dark: #db3e3e;
+$color-instagram: #DD2A7B;
+$color-instagram-dark: #b82265;
+$color-instagram-gradient: #8134AF, #DD2A7B, #FEDA77;
+$color-instagram-gradient-dark: #67288b, #b82265, #cfb261;
+$color-facebook: #1778F2;
+$color-facebook-dark: #1266ce;
+$color-whatsapp: #25D366;
+$color-whatsapp-dark: #1ca84f;
